@@ -1,0 +1,8 @@
+@namespace("com.liderbet.sportradar")
+protocol Live {
+	import schema "live.avsc";
+	record MatchChange{
+		com.liderbet.sportradar.RawMatch match;
+		boolean changed=false;
+	}
+}
